@@ -2,13 +2,10 @@
     "restartable": "rs",
     "ignore": ["node_modules/"],
     "watch": ["src/"],
-    "execMap": {
-      "ts": "node -r ts-node/register"
-    },
+    "exec": "etsc && node ./dist/index.js",
     "env": {
       "NODE_ENV": "development"
     },
     "ext": "js,json,ts",
-    "pollingInterval": 1000,
     "legacyWatch": true
 }
